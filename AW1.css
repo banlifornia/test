@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    font-size: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.desktop-list {
+    display: flex;
+}
+.mobile-list-img {
+    display: block;
+}
+.mobile-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.list-item {
+    margin-left: 15px;
+}
+header {
+    height: 300px;
+    background-color: rgb(169, 235, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.greeting {
+    font-size: 40px;
+}
+.content {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+.promotion {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.promotion-item {
+    flex: none;
+    display: flex;
+    background-color: rgb(169, 235, 240);
+    height: 50px;
+    align-items: center;
+    width: 48.33%;
+}
+.promotion-p {
+    flex: none;
+    padding-left: 10px;
+}
+.picture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 0;
+    
+}
+.item {
+    flex: none;
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 230px;
+    background-color: rgb(169, 235, 240);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .content {
+        width: 90%;
+    }
+    .item {
+        display: flex;
+        width: 48.33%;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+        height: auto;
+    }
+    .pic-img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .item-title {
+        margin: 2%;
+    }
+}
+
+@media (max-width: 600px) {
+    .desktop-list {
+        display: none;
+    }
+    .mobile-list {
+        display: block;
+    }
+    .promotion {
+        display: block;
+        height: 120px;
+    }
+    .promotion-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .picture {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .item {
+        width: 100%;
+    }
+}
